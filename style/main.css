@@ -1,5 +1,7 @@
 /*@author: Cyrus Chester, Date Developed 2/2/2026, Tested 2/2/2026 */
-
+@media only screen and (max-width: 2024px) {
+    #mobile_menu {display:none;}
+}
 /*the style for the body*/
 body{
     width: 725px;
@@ -46,4 +48,5 @@ li {
 
 img{
   position: static;  
+
 }
