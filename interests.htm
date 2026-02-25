@@ -1,34 +1,51 @@
 <!DOCTYPE html>
 
-<!-- Cyrus Chester, Personal Portfolio, Developed 1,16,2026, and date tested 2,2,2026, Southern Illinois University -->
+<!-- Cyrus Chester, Personal Portfolio, Developed 1,16,2026, and date tested 2,23,2026, Southern Illinois University -->
 <html lang="en-US">
     <head>
         <meta charset="utf-8">
-        <title>Personal Portfolio</title> 
+        <title>Interests</title> 
+        <link rel="stylesheet" href="style/slicknav.css">
         <link rel="stylesheet" href="style/main.css">
-        <meta name="description" content="Intrests"> <meta name="keywords" content="intrests, experience, education, portfolio, resume, Cyrus Chester">
+         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+        <script src="js/jquery.slicknav.min.js"></script> 
+        <script type="text/javascript"> 
+            $(document).ready(function(){
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"}); 
+            }); 
+        </script>
+        <meta name="description" content="Interests"> <meta name="keywords" content="interests, experience, education, portfolio, resume, Cyrus Chester">
    
     </head>
 
     <body>
-       <header>
-           <h1>Intrests</h1>
+       <header><h1>Interests</h1>
           
-       </header>    
-        <h2>This is about my intrests</h2>
+       </header>  
+       <nav id="mobile_menu"></nav>
+       <nav id="nav_menu">
+        <ul>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="education.htm">Education</a></li>
+            <li><a href="interests.htm" class="current">Interests</a></li>
+            <li><a href="occupation.htm">Occupation</a></li>
+            <li><a href="contact.htm" class="lastitem">Contact</a></li>
+        </ul>
+       </nav>  
+        <h2>This is about my interests</h2>
         <main>
-            <h2>Education</h2>
-            <h2>1.( SIU</h2>
-            <p class ="first">2025</p>
+            <h2>Personal</h2>
+            <h3>1.( Esports</h3>
+            <p class ="first">I enjoy watching and participating in esports events. Specifically Call of Duty and Rainbow 6 Siege. </p>
         </main>
         <aside>
             <h2>Professional</h2>
-        <h2>1.) LTC</h2>
-            <p class ="first">2024</p>
+        <h2>1.) AI Research</h2>
+            <p class ="first">I find AI to be a very interesting topic to learn about.</p>
         </aside>
 
         <footer>
-        <p>This site is about my work and experience</p>
+        <p>This site is about my interests</p>
         </footer>
         <img src="images/suit.jpg" alt="PP Logo" width="100">
     </body>
