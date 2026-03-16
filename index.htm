@@ -5,21 +5,27 @@
     <head>
         <meta charset="utf-8">
         <title>Personal Portfolio</title> 
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
         <link rel="stylesheet" href="style/main.css">
         <link rel="stylesheet" href="style/slicknav.css">
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
-        <script src="js/jquery.slicknav.min.js"></script> 
+        <script src="jquery.slicknav.min.js"></script>
         <script type="text/javascript"> 
             $(document).ready(function(){
                 $('#nav_menu').slicknav({prependTo:"#mobile_menu"}); 
             }); 
         </script>
-
         <meta name="description" content="Resume"> <meta name="keywords" content="Portfolio, resume, Cyrus Chester">
    
     </head>
 
     <body>
+    <figcaption>Cyrus Chester Portfolio</figcaption>
+        <figure class="calming">
+            <img class="calming" src="images/h4.png" alt="Main site banner"/>
+            <img class="calmer" src="images/h3.png" alt="Main site banner hover"/>
+            </figure>
+        
        <header>
         <nav id="mobile_menu"></nav>
         <nav id="nav_menu">
@@ -27,12 +33,17 @@
                 <li><a href="index.htm" class="current">Home</a></li>
                 <li><a href="education.htm">Education</a></li>
                 <li><a href="interests.htm">Interests</a></li>
-                <li><a href="occupation.htm">Occupation</a></li>
+                <li><a href="occupational.htm">Occupation</a></li>
                 <li><a href="contact.htm" class="lastitem">Contact</a></li>
             </ul> 
         </nav>
            <!-- Header image-->
            <div class="bluetouch"><img src="images/suit.jpg" alt="PP Logo" height="500" width="500"></div>
+           <!--Smooth Audio track-->
+           <audio controls autoplay loop>
+            <source src="audio/snap.mp3" type="audio/mpeg">
+        </audio>
+
        </header>    
        <h1>Cyrus Chester</h1>
         <h2>Personal Portfolio</h2>
@@ -60,4 +71,3 @@
     </body>
 
 </html>
-
