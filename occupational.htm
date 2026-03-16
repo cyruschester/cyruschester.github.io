@@ -5,10 +5,11 @@
     <head>
         <meta charset="utf-8">
         <title>Occupational</title> 
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
         <link rel="stylesheet" href="style/slicknav.css">
         <link rel="stylesheet" href="style/main.css">
-         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
-        <script src="js/jquery.slicknav.min.js"></script> 
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+        <script src="jquery.slicknav.min.js"></script>
         <script type="text/javascript"> 
             $(document).ready(function(){
                 $('#nav_menu').slicknav({prependTo:"#mobile_menu"}); 
@@ -18,13 +19,24 @@
    
     </head>
     <body>
-       <header>
-           <!-- Header image-->
-           <div class="bluetouch"><img src="images/suit.jpg" alt="PP Logo" height="500" width="500"></div>
-       </header>    
+        <!--Me configureing a router and switch picture-->
+        <figure class="calming occupation-hero">
+            <img class="calming" src="images/h4.png" alt="Occupational banner">
+            <img class="calmer" src="images/h3.png" alt="Occupational banner hover">
+        </figure>
+
        <nav id="mobile_menu"></nav>
        <nav id="nav_menu">
+            <ul>
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="education.htm">Education</a></li>
+                <li><a href="interests.htm">Interests</a></li>
+                <li><a href="occupational.htm" class="current">Occupation</a></li>
+                <li><a href="contact.htm" class="lastitem">Contact</a></li>
+            </ul>
+       </nav>
        <h1>Cyrus Chester</h1>
+        <img class="occupation-plain-image" src="images/h5.png" alt="Occupational work image">
         <h2>Occupational Experience</h2>
         <p>This site is about my work experience and skills</p>
         <p>I am currently studying for a dual bachelors in <strong>Information Technology</strong> and <strong>Cybersecurity</strong> at <em>Southern Illinois University</em></p>
