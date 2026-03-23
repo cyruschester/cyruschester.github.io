@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <!-- @author Cyrus Chester, Resume, Education Page
-Southern Illinois University  Developed: 2-23-2026  Tested: 2-23-2026  
+Southern Illinois University  Developed: 2-23-2026  Tested: 3-21-2026  
 -->
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <title>Education</title> 
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
         <link rel="stylesheet" href="style/slicknav.css">
         <link rel="stylesheet" href="style/main.css">
          <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
-         <script src="jquery.slicknav.min.js"></script> 
+         <script src="js/jquery.slicknav.min.js"></script> 
         <script type="text/javascript"> 
             $(document).ready(function(){
                 $('#nav_menu').slicknav({prependTo:"#mobile_menu"}); 
@@ -36,7 +36,7 @@ Southern Illinois University  Developed: 2-23-2026  Tested: 2-23-2026
                 <li><a href="contact.htm" class="lastitem">Contact</a></li>
             </ul> 
         </nav>
-        <main>
+        <main class="education-main">
 
         <h1>Cyrus Chester</h1>
         <!--My video-->
@@ -46,15 +46,118 @@ Southern Illinois University  Developed: 2-23-2026  Tested: 2-23-2026
 
 
         <h2>Education</h2>
-        <p>This page is about my Education</p>
+        <p>This page is about my education.</p>
         <h3>Illinois Eastern Community College</h3>
-        <p>Associates Degree in Science and Arts <br>
+        <p>Associate Degree in Science and Arts <br>
             Graduated: 2025
         </p>
         <h3>Southern Illinois University</h3>
         <p>Dual Bachelor's Degree in Information Technology and Cybersecurity<br>
-Expected Graduation: 2027
-</p>
+            Expected Graduation: 2027
+        </p>
+        <!-- Table of previous classes taken -->
+        <div class="table-wrapper">
+            <table>
+                <caption>Relevant Coursework</caption>
+                <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>School</th>
+                        <th>Subject</th>
+                        <th>Year</th>
+                        <th>Key Topics</th>
+                        <th>Skills Gained</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>IT Fundamentals</td>
+                        <td>IECC</td>
+                        <td>Telecom</td>
+                        <td>2024</td>
+                        <td>Hardware, Networking</td>
+                        <td>Hardware knowledge</td>
+                    </tr>
+                    <tr>
+                        <td>Networking Fundamentals II</td>
+                        <td>IECC</td>
+                        <td>Telecom</td>
+                        <td>2025</td>
+                        <td>Programming, networking</td>
+                        <td>Packet Tracer, networking</td>
+                    </tr>
+                    <tr>
+                        <td>Principles of Management</td>
+                        <td>IECC</td>
+                        <td>Business</td>
+                        <td>2025</td>
+                        <td>Management</td>
+                        <td>Problem solving, regulations</td>
+                    </tr>
+                    <tr>
+                        <td>Occupational Safety (OSHA)</td>
+                        <td>IECC</td>
+                        <td>Safety</td>
+                        <td>2025</td>
+                        <td>Laws, regulations</td>
+                        <td>Safety awareness</td>
+                    </tr>
+                    <tr>
+                        <td>Business Computer Systems</td>
+                        <td>IECC</td>
+                        <td>Business</td>
+                        <td>2024</td>
+                        <td>Word, PowerPoint, Excel</td>
+                        <td>Microsoft Office skills</td>
+                    </tr>
+                    <tr>
+                        <td>Intro to Programming</td>
+                        <td>SIU</td>
+                        <td>Information Technology</td>
+                        <td>2025</td>
+                        <td>Programming basics</td>
+                        <td>Problem solving</td>
+                    </tr>
+                    <tr>
+                        <td>Security Fundamentals</td>
+                        <td>SIU</td>
+                        <td>Cybersecurity</td>
+                        <td>2025</td>
+                        <td>Cybersecurity infrastructure</td>
+                        <td>Cybersecurity awareness</td>
+                    </tr>
+                    <tr>
+                        <td>Networking Fundamentals</td>
+                        <td>SIU</td>
+                        <td>Information Technology</td>
+                        <td>2025</td>
+                        <td>Networking hardware, networking</td>
+                        <td>Subnetting, network architecture</td>
+                    </tr>
+                    <tr>
+                        <td>Legal and Ethical Issues in IT</td>
+                        <td>SIU</td>
+                        <td>Information Technology</td>
+                        <td>2025</td>
+                        <td>IT ethics, IT regulations</td>
+                        <td>Philosophy, regulation adherence</td>
+                    </tr>
+                    <tr>
+                        <td>Technical Subjects in Cybersecurity</td>
+                        <td>SIU</td>
+                        <td>Cybersecurity</td>
+                        <td>2026</td>
+                        <td>IP addresses, target analysis</td>
+                        <td>Tracking targets from IP addresses</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="6">Total courses listed: 10</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
         </main>
     </body>
 
