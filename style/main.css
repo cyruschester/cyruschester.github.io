@@ -1,42 +1,46 @@
 /*@author: Cyrus Chester, Date Developed 2/2/2026, Tested 2/8/2026 */
-@media only screen and (max-width: 2024px) {
-    #mobile_menu {display: none;}
+#mobile_menu {
+    display: none;
 }
+
+th {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+td {
+    border: 1px solid black;
+}
+
 @media only screen and (max-width: 959px) {
-    #mobile_menu {display: none;}
+    th {
+        font-size: 1.2em;
+    }
 }
+
 @media only screen and (max-width: 767px) {
     #mobile_menu {display: block;}
-    #nav_menu { display: none }
-    header h2 { font-size: 1.375em;}
-    header h3 { font-size: .8125em;}
-    p{ font-size: .875em; }
-    article h1, main h2, aside
-    { font-size: 1em; }
-    aside li { font-size: .875em; }
-    }
-@media only screen and (max-width: 479px){
-    #mobile_menu {display: block;}
-    #nav_menu { display: none }
-    main, aside {
-      float: none;
-      width: 100%;
+    #nav_menu {display: none;}
+    header,
+    main,
+    aside {
+        float: none;
+        width: 100%;
     }
     header h2 { font-size: 1.375em;}
     header h3 { font-size: .8125em;}
-    p{ font-size: .875em; }
-    article h1, main h2, aside
-    { font-size: 1em; }
+    p { font-size: .875em; }
+    article h1, main h2, aside { font-size: 1em; }
     aside li { font-size: .875em; }
+    th {
+        font-size: 1em;
     }
-@media only screen and (max-width: 767px) {
-    #mobile_menu {display: block;}
-    #nav_menu { display: none }
-    main, aside {
-      float: none;
-      width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    th {
+        font-size: 1.4em;
     }
-    /* existing rules... */
 }
 
 /*the style for the body*/
@@ -59,6 +63,11 @@ main {
     background-color:#ffffff; /*this color is for white*/
     float:left;
 }
+
+.education-main {
+    width: 97.917%;
+    float: none;
+}
 aside{
      width: 47.917%;
     padding: 10px 1.0417%;
@@ -68,11 +77,11 @@ aside{
 
 h1{
     font-size: 1.75em;
-    padding:to 10px;
+    padding-top: 10px;
 }
 h2 {
     font-size: 1.5em;
-    padding:to 10px;
+    padding-top: 10px;
 }
 h3 {
     font-size: 1.125em;
@@ -86,7 +95,7 @@ p {
 blockquote {
     width: 47.917%;
     padding: 10px 1.0417%;
-    float:center;
+    margin: 0 auto;
 }
 footer {
     font-size: .75em;
@@ -130,9 +139,23 @@ figcaption {
     margin-bottom: 1em;
     border-bottom: 1px solid black;
 }
-
-
-
+table{
+    border: 1px solid black;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: 1em;
+}
+fieldset{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: .5em;
+}
+legend{
+    color: black;
+    font-weight:bold;
+    font-size: 1em;
+    margin-bottom: .5em;
+}
 
 
 .calming {
@@ -220,4 +243,32 @@ table {
 
 img{
   position: static;  
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border: 1px solid black;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: .5em;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: left;
+}
+
+@media only screen and (max-width: 470px) {
+    .table-wrapper table {
+        min-width: 720px;
+    }
 }
